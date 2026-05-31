@@ -14,3 +14,38 @@ body {
     align-items: center;
     padding: 3rem 1rem;
 }
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #CE7BFF, #844AF8 70%, #5F2FEF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    background: #171524;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
+}
+
+/* Add a hover effect to the link items */
+.link-item:hover {
+    opacity: 0.8;
+}

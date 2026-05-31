@@ -15,6 +15,25 @@ body {
     padding: 3rem 1rem;
 }
 
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
 h1 {
     font-size: 2rem;
     font-weight: 800;
@@ -48,4 +67,35 @@ h1 {
 /* Add a hover effect to the link items */
 .link-item:hover {
     opacity: 0.8;
+}
+
+.link-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+
+    /* Prevent the icon from shrinking when the container is too small */
+    flex-shrink: 0;
+}
+
+.link-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+
+}
+.link-sub {
+    color: #aaa;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  h1 { font-size: 1.6rem; }
+  .link-icon { width: 48px; height: 48px; font-size: 1.2rem; }
 }

@@ -48,7 +48,10 @@ btn.addEventListener('click', async function() {
         currentText = await translate(currentText, from, lang.code);
         from = lang.code; // Set the source language for the next translation
         console.log(lang.name + ':', currentText);
-    }
+        document.getElementById('translation-status').textContent = `Translated to ${lang.name}...`;
+    } 
+    
+    document.getElementById('translation-status').textContent = 'Translation complete!';
 
     document.getElementById('final-text').textContent = currentText;
     document.getElementById('original-text').textContent = input;
@@ -58,3 +61,22 @@ btn.addEventListener('click', async function() {
 
 // Reset button functionality
 const resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click', function() {
+    document.getElementById('input-text').value = '';
+    document.getElementById('result-box').style.display = 'none';
+    document.getElementById('original-text').textContent = '';
+    document.getElementById('final-text').textContent = '';
+});
+
+const shareBtn = document.getElementById('share-btn');
+shareBtn.addEventListener('click', function() {
+    const original = document.getElementById('original-text').textContent;
+    const final = document.getElementById('final-text').textContent;
+
+    // Store the original and final texts in localStorage
+    localStorage.setItem('original', original);
+    localStorage.setItem('final', final);
+
+    // Redirect to the share page
+    window.location.href = 'share.html';
+});

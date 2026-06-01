@@ -42,6 +42,7 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 /*index.html */
@@ -128,6 +129,14 @@ textarea {
     margin-top: 1.2rem;
     padding: 0.8rem;
     cursor: pointer;
+}
+
+#translation-status {
+
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #87818D;
+    text-align: center;
 }
 
 /* contact.html */

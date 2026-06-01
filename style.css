@@ -102,8 +102,91 @@ h1 {
     border: 1px solid #493C56;
     border-radius: 20px;
     padding: 2rem;
-    gap: 1rem;
+
 }
+
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #87818D;
+    margin-bottom: 0.5rem;
+}
+
+.result-label {
+    color: #CE7BFF;
+}
+
+.original-text{
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 1.6rem;
+    color: #87818D;
+}
+
+.result-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.6rem;
+    color: #E2E1E4;
+}
+
+
+/* line divider */
+.divider {
+    height: 1px;
+    background: #4C4850;
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap:  3rem;
+}
+
+.card-footer-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #CE7BFF, #844AF8 70%, #5F2FEF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-url {
+    font-size: 0.65rem;
+    color: #5B5562;
+
+}
+
+#dl-btn {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    margin-top: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #CE7BFF, #844AF8 70%, #5F2FEF);
+    color: #E2E1E4;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#status {
+
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #87818D;
+    text-align: center;
+}
+
+
+
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 480px) {

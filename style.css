@@ -117,6 +117,19 @@ textarea {
 
 }
 
+#share-btn {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #CE7BFF, #844AF8 70%, #5F2FEF);
+    color: #E2E1E4;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
 /* contact.html */
 .links {
     display: flex;

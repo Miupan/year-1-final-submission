@@ -44,6 +44,80 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+/*index.html */
+
+.input-card {
+    width: 100%;
+    max-width: 600px;
+    background: #171524;
+    border: 1px solid #493C56;
+    border-radius: 24px;
+    padding: 1.2rem;
+    margin-bottom: 1.0rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    background: #07040A;
+    border: 1px solid #493C56;
+    border-radius: 12px;
+    color: #E2E1E4;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 1rem;
+    resize: none;
+    outline: none;
+}
+
+.btn-row {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.8rem;
+}
+
+#go {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #CE7BFF, #844AF8 70%, #5F2FEF);
+    color: #E2E1E4;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#reset {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #87818D;
+    border-radius: 12px;
+    background: transparent;
+    color: #87818D;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background: #a855f7;
+    color: #171524;
+}
+
+#result-box {
+    width: 100%;
+    max-width: 600px;
+    background: #171524;
+    border: 1px solid #493C56;
+    border-radius: 24px;
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+
+    /* Initially hide the result box until we have results to show */
+    /* display: none; */
+
+}
+
+/* contact.html */
 .links {
     display: flex;
     flex-direction: column;

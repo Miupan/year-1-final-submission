@@ -8,6 +8,7 @@
     <title>Translation Telephone</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <a href="index.html">Home</a>
@@ -17,7 +18,29 @@
 
     <main>
         <h1>Translation Telephone</h1>
-        <p>Welcome to the Translation Telephone!</p>
+        
+
+        <!-- Input Area -->
+        <div class = "input-card">
+            <textarea id = "input-text" placeholder="Type your text here..."></textarea>
+            
+            <div class = "btn-row">
+                <button id = "go"> Translate Through 15 Languages </button>
+                <button id = "reset"> Reset</button>
+            </div>
+        </div>
+
+        <!-- Translation Area -->
+        <div id = "translation-area"></div>
+
+        <!-- Result Box -->
+        <div id = "result-box">
+            <p id = "original-text"></p>
+            <p id = "final-text"></p>
+            <button id = "share-btn"> Share Your Result</button>
+        </div>
+
     </main>
+
 </body>
 </html>

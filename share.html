@@ -3,47 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-     <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result - Translation Telephone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="share.html">Share Result</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="share.html">Share Result</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+        <main>
 
-    <main>
+            <div id="card">
+                <p class="section-label">ORIGINAL</p>
+                <p class="original-text" id="card-original">-</p>
 
-        <div id = "card">
-            <p class = "section-label">ORIGINAL</p>
-            <p class = "original-text" id = "card-original">-</p>
+                <div class="divider"></div>
 
-            <div class = "divider"></div>
+                <p class="section-label result-label">RESULT</p>
+                <p class="result-text" id="card-result">-</p>
 
-            <p class = "section-label result-label">RESULT</p>
-            <p class = "result-text" id = "card-result">-</p>
+                <div class="divider"></div>
 
-            <div class = "divider"></div>
+                <div class="card-footer">
+                    <span class="card-footer-text">Translation Telephone</span>
+                    <span class="footer-url">translation-telephone.pages</span>
+                </div>
 
-            <div class = "card-footer">
-                <span class = "card-footer-text">Translation Telephone</span>
-                <span class = "footer-url">translation-telephone.pages</span>
             </div>
 
-        </div>
+            <button id="dl-btn">
+                <i class="fa-solid fa-download"></i> Download Image</button>
 
-        <button id = "dl-btn">
-            <i class="fa-solid fa-download"></i> Download Image</button>
-            
-            <p id = "status"></p>
+            <p id="status"></p>
 
-    </main>
+        </main>
 
         <script src="share.js"></script>
 

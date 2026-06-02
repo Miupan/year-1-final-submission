@@ -114,7 +114,7 @@ textarea {
     padding: 1.2rem;
 
     /* Initially hide the result box until we have results to show */
-    /* display: none; */
+    display: none;
 
 }
 
